@@ -410,5 +410,12 @@
     font-size: 12px;
   }
 }
+.collaborate {
+  margin-top: 140px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 /*# sourceMappingURL=style.css.map */
