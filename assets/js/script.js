@@ -9,3 +9,25 @@ bookmark.addEventListener('click', () => {
   bookmark.classList.toggle('is-active');
   navCollapse.classList.toggle('is-active');
 });
+
+var swiper = new Swiper("#swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+    
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    620: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    920: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
