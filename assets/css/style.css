@@ -744,5 +744,226 @@
     padding: 25px 40px;
   }
 }
+.comment {
+  padding: 0 20px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.comment-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.comment-title span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 43px;
+  color: #00B4FF;
+}
+.comment-title h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 76px;
+  color: #000000;
+}
+.comment-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  background: #F5F5F5;
+  position: relative;
+  transition: 0.6s all;
+}
+.comment-item:hover {
+  background: #7B66E8;
+}
+.comment-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: #FFFFFF;
+}
+.comment-item__image {
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 999;
+}
+.comment-item__content {
+  padding: 0 60px 70px 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.comment-item__content-desc {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 43px;
+  color: #000000;
+  transition: 0.6s all;
+}
+.comment-item__content-author {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.comment-item__content-author__name {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 52px;
+  color: #000000;
+  transition: 0.6s all;
+}
+.comment-item__content-author__status {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #666666;
+  transition: 0.6s all;
+}
+.comment-buttons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.comment-buttons__btn {
+  padding: 15px;
+  border-radius: 50%;
+  background: #7B66E8;
+}
+.comment-buttons__icon {
+  width: 30px;
+  height: 30px;
+  fill: #FFFFFF;
+}
+
+.comment-item:hover .comment-item__content-desc {
+  color: #FFFFFF;
+}
+
+.comment-item:hover .comment-item__content-author__name {
+  color: #FFFFFF;
+}
+
+.comment-item:hover .comment-item__content-author__status {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 920px) {
+  .comment {
+    margin-top: 100px;
+    gap: 30px;
+  }
+  .comment-title span {
+    font-size: 22px;
+  }
+  .comment-title h1 {
+    font-size: 46px;
+  }
+  .comment-buttons {
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .comment-buttons__btn {
+    padding: 15px;
+  }
+  .comment-item {
+    gap: 60px;
+  }
+  .comment-item::before {
+    height: 60px;
+  }
+  .comment-item__image {
+    max-width: 120px;
+  }
+  .comment-item__content-desc {
+    font-size: 22px;
+  }
+  .comment-item__content-author__name {
+    font-size: 32px;
+  }
+  .comment-item__content-author__status {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .comment {
+    margin-top: 80px;
+    gap: 25px;
+  }
+  .comment-title span {
+    font-size: 20px;
+  }
+  .comment-title h1 {
+    font-size: 40px;
+  }
+  .comment-buttons {
+    margin-top: 30px;
+    gap: 10px;
+  }
+  .comment-buttons__btn {
+    padding: 10px;
+  }
+  .comment-item {
+    gap: 40px;
+  }
+  .comment-item::before {
+    height: 50px;
+  }
+  .comment-item__image {
+    max-width: 100px;
+  }
+  .comment-item__content-desc {
+    font-size: 20px;
+  }
+  .comment-item__content-author__name {
+    font-size: 28px;
+  }
+  .comment-item__content-author__status {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .comment {
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .comment-title span {
+    font-size: 18px;
+  }
+  .comment-title h1 {
+    font-size: 34px;
+  }
+  .comment-buttons {
+    margin-top: 20px;
+  }
+  .comment-item {
+    gap: 20px;
+  }
+  .comment-item::before {
+    height: 40px;
+  }
+  .comment-item__image {
+    max-width: 80px;
+  }
+  .comment-item__content-desc {
+    font-size: 18px;
+  }
+  .comment-item__content-author__name {
+    font-size: 24px;
+  }
+  .comment-item__content-author__status {
+    font-size: 14px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
